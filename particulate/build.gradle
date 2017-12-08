@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+version = VERSION_NAME
+group = GROUP
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-annotations:27.0.2'
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'org.robolectric:robolectric:3.0'
+}
+
+apply from: 'maven_push.gradle'

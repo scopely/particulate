@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Particulate-Example</string>
+    <string name="view_bound_button_text">I am a button</string>
+    <string name="point_emitter">Point Emitter</string>
+    <string name="path_emitter">Path Emitter</string>
+    <string name="bound_view">Bound View</string>
+    <string name="view_center">View Center</string>
+    <string name="gravity_well">Gravity Well</string>
+    <string name="touch_point">Touch Point</string>
+    <string name="snow">Snow</string>
+</resources>
